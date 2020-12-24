@@ -1,0 +1,25 @@
+#How to generate a dataset in R
+#Concatenation of data in R/ inputing data in R
+# #exdatast = 95, 104, 91, 107, 96, 108, 98, 108, 101, 89, 96, 107, 106, 105, 105, 97, 109, 94, 103, 94, 108,108, 112, 111, 114)
+#exdatast=c(95, 104, 91, 107, 96, 108, 98, 108, 101, 89, 96, 107, 106, 105, 105, 97, 109, 94, 103, 94, 108,108, 112, 111, 114)
+ #for obataining summary variables of the data 
+mean(exdatast) # for obtaining mean of data 
+# we can simply compute mean by using the general formulla that is sum of obs/no of obs
+sum(exdatast)/
+sd(exdatast) # for computing standard deviation
+hist(exdatast) # for plotting histogram of the data set 
+summary(exdatast)
+hist(exdatast)
+
+hist(exdatast)
+hist(exdatast, xlab = 'Average expenditure') #xlab for labellling x axis similarly we can label y axis using ylab
+hist(exdatast, xlab = 'Average expenditure', ylab = 'Monthly exp of employess')
+
+hist(exdatast, xlab = 'Average expenditure', ylab = 'Monthly exp of employess', main = 'Histogram of monthly expensiture of employees')
+#main is used to caption the histogram and for colour we used col followed by the colour we want
+hist(exdatast, xlab = 'Average expenditure', ylab = 'Monthly exp of employess', main = 'Histogram for monthly expenditure of employees', col = 'green
+#for imposing smooth density function we can use the following code and accordingly we can modifty our our density function
+lines(density(exdatast))
+lines(density(exdatast), col='red')
+lines(density(exdatast), col='red', lwd=10)
+# Scatterplot in R
